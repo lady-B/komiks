@@ -1,0 +1,39 @@
+#!/bin/bash
+
+function powiedz {
+   reset
+   cowsay -f $1 $2
+   sleep 2
+}
+
+function mysl {
+   reset
+   cowthink -f $1 $2
+   sleep 6
+}
+
+reset
+echo "To jest pierwszy cowsay'owy komiks Basi!"
+sleep 2
+
+powiedz dragon "Witamy w komiksie!"
+powiedz dragon "Nie bójcie się! Jestem niegroźny" 
+powiedz moose "Moje uszanowanie"
+powiedz dragon "Hej!"
+powiedz default "Elo"
+powiedz dragon "Hej"
+powiedz moose "Dzień dobry"
+mysl default "Ale elegancik, chodzimy do tej samej klasy 4 lata a on mówi mi dzieńdobry zamiast hej, elo lub cześć"
+powiedz sheep "Cześć chłopcy"
+mysl default "Ale ładna"
+powiedz sheep "Czy ktoś z was mógłby pomóc mi w lekcjach?"
+powiedz default "Ja"
+reset
+echo "pół godziny później"
+sleep 3
+powiedz default "gotowe"
+powiedz sheep "dzięki za pomoc"
+powiedz default "może się ze mną przejdziesz?"
+powiedz sheep "oczywiście"
+
+
