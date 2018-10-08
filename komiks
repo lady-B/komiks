@@ -43,4 +43,23 @@ powiedz sheep "dzięki za pomoc"
 powiedz default "może się ze mną przejdziesz?"
 powiedz sheep "oczywiście"
 
+powiedz sheep "późno, ale okej"
+powiedz default "chodź"
+powiedz default "idziemy na kawę ? "
+powiedz sheep " jesteśmy mali, nie możemy pić kawy"
+powiedz default "możemy ! "
+powiedz sheep " nie"
+powiedz default " można pić dziecięcą "
+powiedz sheep "aa tak oczy..."
+reset
+echo " prrrr"
+sleep 2
+powiedz sheep "...wiści . Pierdnąłeś?"
+powiedz default " ta"
+powiedz sheep " idziemy?"
+powiedz default " ta"
+echo " godzina po wyjściu minęła wolno, ale fajnie .Na dworze 10 c. mrozu"
+
+powiedz default "zimno"
+powiedz sheep "tak"
 
