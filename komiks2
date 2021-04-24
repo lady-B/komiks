@@ -1,0 +1,28 @@
+#!/bin/bash
+
+function odczekaj {
+   dlugosc=$(echo $1 | wc -c)
+   # dwie sekundy plus czas wynikający z liczby znaków w wypowiedzi
+   czekamy=$(echo ${dlugosc}/6 + 2 | bc)
+   sleep ${czekamy}
+}
+
+function powiedz {
+   reset
+   cowsay -f $1 $3 $2
+   odczekaj "$2"
+}
+
+function mysl {
+   reset
+   cowthink -f $1 $2
+   odczekaj "$2"
+}
+
+reset
+echo "W kawiarni"
+sleep 2
+
+powiedz default "Pyszna kawa, szczególnie w Twoim towarzystwie" "-e ♡♡"
+powiedz sheep "Tak uważasz?"
+powiedz sheep "Mi do niej włos wleciał"
